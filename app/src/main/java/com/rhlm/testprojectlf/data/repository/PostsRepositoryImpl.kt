@@ -21,10 +21,6 @@ class PostsRepositoryImpl @Inject constructor(private val postsApi: PostsApi) : 
         Log.i("TAG", "getPosts: 1")
         val result = postsApi.getPosts().execute().body()
         emit(Resource.Success(result))
-        Log.i("TAG", "getPosts: 2 ${result?.get(0)?.title}")
-        Log.i("TAG", "getPosts: 2 ${result?.get(1)?.title}")
-        Log.i("TAG", "getPosts: 2 ${result?.get(2)?.title}")
-        Log.i("TAG", "getPosts: 2 ${result?.get(3)?.title}")
     }.flowOn(Dispatchers.IO)
         .catch { e ->
             Log.i("TAG", "getPosts: 3 ${e.message}")

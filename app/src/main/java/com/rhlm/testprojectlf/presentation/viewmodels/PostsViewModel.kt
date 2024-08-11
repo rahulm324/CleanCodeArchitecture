@@ -26,7 +26,7 @@ class PostsViewModel @Inject constructor(private val useCase: GetAllPostsUseCase
         get() = _postsState
 
     fun getAllPosts() {
-        viewModelScope.launch {
+        //viewModelScope.launch {
             useCase.invoke().onEach {
                 when (it) {
                     is Resource.Error -> {
@@ -43,6 +43,6 @@ class PostsViewModel @Inject constructor(private val useCase: GetAllPostsUseCase
                     }
                 }
             }.launchIn(viewModelScope)
-        }
+        //}
     }
 }

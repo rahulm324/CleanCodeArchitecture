@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="color_primary_dark">#006064</color>
+    <color name="color_primary">#0097A7</color>
+    <color name="color_primary_light">#80DEEA</color>
+    <color name="color_light">#B2EBF2</color>
+    <color name="text_hint">#9E9E9E</color>
+<!--700, 500, 200 -->
 </resources>
