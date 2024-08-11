@@ -28,7 +28,6 @@ class PostsRepositoryImpl @Inject constructor(private val postsApi: PostsApi) : 
     }.flowOn(Dispatchers.IO)
         .catch { e ->
             Log.i("TAG", "getPosts: 3 ${e.message}")
-
-            //emit(Resource.Error(it.message.toString()))
+            emit(Resource.Error(e.message.toString()))
         }
 }
