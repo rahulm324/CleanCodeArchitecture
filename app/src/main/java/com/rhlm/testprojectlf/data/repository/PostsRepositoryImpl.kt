@@ -31,13 +31,4 @@ class PostsRepositoryImpl @Inject constructor(private val postsApi: PostsApi) : 
 
             //emit(Resource.Error(it.message.toString()))
         }
-
-    /*private fun generateListToDisplay() : List<PostDtoItem>{
-            val list = mutableListOf<PostDtoItem>()
-            for (i in 1..10){
-                val item = PostDtoItem(body = "data item $i", id = i, title = "Item Title $i", userId = 100 + i)
-                list.add(item)
-            }
-        return list
-    }*/
 }
