@@ -2,16 +2,14 @@ package com.rhlm.testprojectlf.presentation.view.login
 
 import android.content.Intent
 import android.os.Bundle
-import android.renderscript.ScriptGroup.Binding
 import android.util.Log
-import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.rhlm.testprojectlf.R
 import com.rhlm.testprojectlf.databinding.ActivityLoginBinding
-import com.rhlm.testprojectlf.presentation.view.MainActivity
+import com.rhlm.testprojectlf.presentation.view.home.MainActivity
 
 class LoginActivity : AppCompatActivity() {
     private val tag = "LoginActivity"
